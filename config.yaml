@@ -26,11 +26,12 @@ monitors:
 
   - id: internet-conn
     name: check-internet-conn-at-office
-    description: 'This checks the internet connection.'
-    url: 'https"//safaglobaltech.com'
-    method: GET
-    expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
+    description: 'Main site, Safa Global Tech.' # default=empty
+    url: 'https://safaglobaltech.com/' # URL to fetch
+    method: GET # default=GET
+    expectStatus: 200 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
 
   - id: blog-cloudflare-com
     name: site-op
