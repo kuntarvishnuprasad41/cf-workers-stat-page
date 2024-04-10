@@ -26,7 +26,9 @@ export default function MonitorStatusHeader({ kvMonitorsLastUpdate }) {
             checked{' '}
             {Math.round((Date.now() - kvMonitorsLastUpdate.time) / 1000)} sec
             ago (from{' '}
-            {locations[kvMonitorsLastUpdate.loc] || kvMonitorsLastUpdate.loc})
+            Bengaluru
+            {/* {locations[kvMonitorsLastUpdate.loc] || kvMonitorsLastUpdate.loc} */}
+            )
           </div>
         )}
       </div>
