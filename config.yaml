@@ -29,7 +29,7 @@ monitors:
     description: 'This checks the internet connection.'
     url: 'https"//safaglobaltech.com'
     method: GET
-    expectStatus: 301
+    expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
   - id: blog-cloudflare-com
