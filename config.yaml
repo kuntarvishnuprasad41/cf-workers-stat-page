@@ -27,9 +27,9 @@ monitors:
   - id: internet-conn
     name: check-internet-conn-at-office
     description: 'Main site, Safa Global Tech.' # default=empty
-    url: 'http://49.205.194.7/' # URL to fetch
+    url: 'https://safaglobaltech.com/' # URL to fetch
     method: GET # default=GET
-    expectStatus: 301 # operational status, default=200
+    expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
