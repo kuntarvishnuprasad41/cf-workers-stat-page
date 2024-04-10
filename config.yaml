@@ -22,14 +22,14 @@ monitors:
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
+    linkable: true # allows the title to be a link, default=true
 
   - id: internet-conn
     name: check-internet-conn-at-office
     description: 'Main site, Safa Global Tech.' # default=empty
-    url: 'https://safaglobaltech.com/' # URL to fetch
+    url: 'http://49.205.194.7/' # URL to fetch
     method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
+    expectStatus: 301 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
@@ -39,4 +39,4 @@ monitors:
     method: GET
     expectStatus: 200
 
-    
+
