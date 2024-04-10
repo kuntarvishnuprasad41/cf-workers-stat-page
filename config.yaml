@@ -38,3 +38,5 @@ monitors:
     url: 'https://www.safaglobaltech.com/'
     method: GET
     expectStatus: 200
+
+    
