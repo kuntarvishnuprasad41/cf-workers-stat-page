@@ -26,18 +26,14 @@ monitors:
 
   - id: internet-conn
     name: check-internet-conn-at-office
-    description: 'This checks the internet connection at office.'
-    url: 'https://www.safaglobaltech.com'
+    description: 'This checks the internet connection.'
+    url: 'http://49.205.194.7/'
     method: GET
     expectStatus: 200
     linkable: true # allows the title to be a link, default=true
 
-   - id: site-health
-    name: check-internet-conn-at-office
-    description: 'This checks the internet connection at office.'
-    url: 'http://safaglobaltech.com'
+  - id: blog-cloudflare-com
+    name: site-op
+    url: 'https://www.safaglobaltech.com/'
     method: GET
     expectStatus: 200
-    linkable: true
-
- 
