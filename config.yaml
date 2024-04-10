@@ -29,7 +29,7 @@ monitors:
     description: 'This checks the internet connection.'
     url: 'http://49.205.194.7/'
     method: GET
-    expectStatus: 200
+    expectStatus: 301
     linkable: true # allows the title to be a link, default=true
 
   - id: blog-cloudflare-com
