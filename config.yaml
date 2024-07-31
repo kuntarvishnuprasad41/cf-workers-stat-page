@@ -35,7 +35,7 @@ monitors:
 
   - id: blog-cloudflare-com
     name: site-op
-    url: 'https://www.vishnuprasadkuntar.me/'
+    url: 'https://vishnuprasadkuntar.me/'
     method: GET
     expectStatus: 200
 
