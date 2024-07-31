@@ -18,11 +18,25 @@ monitors:
   - id: vishnu-kuntar-com # unique identifier
     name: vishnu-site
     description: 'Check Whether dev is up.' # default=empty
-    url: 'https://buyology.vishnuprasadkuntar.me' # URL to fetch
+    url: 'https://buyology.vishnuprasadkuntar.me/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
 
+  - id: internet-conn
+    name: check-internet-conn-at-kuntar
+    description: 'Main site, Cheking Jenkins stat.' # default=empty
+    url: 'https://jenkins.vishnuprasadkuntar.me' # URL to fetch
+    method: HEAD # default=GET
+    expectStatus: 403 # operational status, default=200
+    followRedirect: true # should fetch follow redirects, default=false
+    linkable: false # allows the title to be a link, default=true
+
+  - id: blog-cloudflare-com
+    name: site-op
+    url: 'https://vishnuprasadkuntar.me/'
+    method: GET
+    expectStatus: 200
 
 
