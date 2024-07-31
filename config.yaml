@@ -1,6 +1,6 @@
 settings:
   title: 'Status Page'
-  url: 'https://status.vishnuprasadkuntar.me' # used for Slack messages
+  url: 'https://status.safaglobaltech.com' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -15,19 +15,19 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: vishnu-kuntar-com # unique identifier
-    name: vishnu-site
-    description: 'Main site, kuntar vishnuprasad.' # default=empty
-    url: 'https://jenkins.vishnuprasadkuntar.me/' # URL to fetch
+  - id: safa-globaltech-com # unique identifier
+    name: safa-site
+    description: 'Main site, Safa Global Tech.' # default=empty
+    url: 'https://safaglobaltech.com/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
 
   - id: internet-conn
-    name: check-internet-conn-at-kuntar
-    description: 'Main site, buyology.' # default=empty
-    url: 'https://buyology.vishnuprasadkuntar.me' # URL to fetch
+    name: check-internet-conn-at-office
+    description: 'Main site, Safa Global Tech.' # default=empty
+    url: 'https://49.205.194.7' # URL to fetch
     method: HEAD # default=GET
     expectStatus: 403 # operational status, default=200
     followRedirect: true # should fetch follow redirects, default=false
@@ -35,7 +35,7 @@ monitors:
 
   - id: blog-cloudflare-com
     name: site-op
-    url: 'https://www.vishnuprasadkuntar.me/'
+    url: 'https://www.safaglobaltech.com/'
     method: GET
     expectStatus: 200
 
