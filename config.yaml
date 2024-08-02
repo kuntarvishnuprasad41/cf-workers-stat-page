@@ -33,10 +33,3 @@ monitors:
     followRedirect: true # should fetch follow redirects, default=false
     linkable: false # allows the title to be a link, default=true
 
-  - id: blog-cloudflare-com
-    name: site-op
-    url: 'https://vishnuprasadkuntar.me/'
-    method: GET
-    expectStatus: 200
-
-
