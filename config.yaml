@@ -16,7 +16,7 @@ settings:
 
 monitors:
   - id: internet-conn
-    name: check-internet-conn-at-kuntar
+    name: 'Checking the internet connection at home'
     description: 'Main site, Cheking Jenkins stat.' # default=empty
     url: 'https://jenkins.vishnuprasadkuntar.me' # URL to fetch
     method: HEAD # default=GET
